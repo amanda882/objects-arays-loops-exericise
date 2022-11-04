@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeric Sort</title>
+</head>
+<body>
+    <script>
+        let numbers = [3, 27, 400, 1, 111, 5];
+        console.log(`numbers NOT sorted are ${numbers}`);
+
+        function sortNumbersAscending(a, b){
+            return a - b;
+        }
+
+        function sortNumbersDescending(a,b) {
+            return b - a;
+        }
+
+        console.log(`ascending sort is ${numbers.sort(sortNumbersAscending)}`);
+        console.log(`descending sort is ${numbers.sort(sortNumbersDescending)}`);
+        
+        numbers.sort(function () {return a - b}); //anomyous statement //  anomyous function
+        console.log(numbers)
+    </script>
+
+
+    <!-- <script>
+         function compareAscendingNumber (a, b) {
+            if (a < b) return -1; //values a & b are in the right order
+            else if (a == b) return 0; // values a & b are the same
+            else return 1; // values a & b are in the wrong order, swap them
+        }
+
+        let numbers = [3, 27, 400, 1, 111, 5];
+
+        console.log(`numbers NOT sorted are ${numbers}`);
+        numbers.sort(compareAscendingNumber);
+        console.log(`numbers sorted are ${numbers}`);
+    </script>
+     -->
+</body>
+</html>
